@@ -17,4 +17,4 @@ jobs:
         uses: actions/setup-java@v2
 #finally build your app with the latest command
       - name: Build and test with Maven
-        run: mvn --batch-mode --update-snapshots verify
+        run: mvn -b -snapshots verify
