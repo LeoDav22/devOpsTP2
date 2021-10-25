@@ -41,10 +41,5 @@ jobs:
         uses: docker/build-push-action@v2 
         with: 
           context: ./httpd
-<<<<<<< HEAD
-          tags: ${{secrets.DOCKER_HUB_USERNAME}}/tp-devops-epf:httpd
-          push: ${{ github.ref == 'refs/heads/master' }}
-=======
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-epf:httpd
           push: ${{ github.ref == 'refs/heads/master' }}
->>>>>>> develop
